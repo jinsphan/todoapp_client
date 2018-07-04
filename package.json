@@ -36,6 +36,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": " react-scripts start",
     "start": " npm-run-all -p watch-css start-js",
+    "start:heroku": "REACT_APP_NODE_ENV=production npm start",
     "prebuild": "npm run cleansymlink && npm run symlinkdev && npm run build-css",
     "build": "  react-scripts build",
     "test": "react-scripts test --env=jsdom",
